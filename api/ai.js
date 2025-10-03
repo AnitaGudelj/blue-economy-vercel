@@ -55,6 +55,8 @@ Vrati točan redoslijed:
     }
 
     const data = await r.json();
+    console.log("RAW OpenAI response:", JSON.stringify(data));
+
     // OpenAI Responses vraća output u poljima; uzmi prvi tekstualni dio
     const raw =
       data.output_text ??
